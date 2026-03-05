@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">[Daniel Jones]</a>
+            <ul class="nav-links">
+                <li><a href="#software-projects" class="nav-link">Software</a></li>
+                <li><a href="#animation-projects" class="nav-link">Animation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-image-wrap">
+                <img src="\assets\portrait-1.png" alt="A portrait of Daniel Jones" class="hero-portrait">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Meaningful storytelling. Powerful design.</h1>
+                <p class="hero-subtitle">Animator, Software Designer/Developer</p>
+                <p class="hero-description">
+                    I tell stories through video, animation, and film — and build the software tools that make it possible.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Software Projects Section -->
+        <section id="software-projects" class="section fade-in-section">
+            <h2 class="section-title">Software Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="card">
+                    <img src="\assets\Cinestorm.png" alt="Screenshot of Project One" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">Cinestorm</h3>
+                        <p class="card-description">A digital workstation for generative storytelling.</p>
+                        <div class="card-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Electron</span>
+                        </div>
+                        <a href="https://lucidiancreative.github.io/Cinestorm-website/" class="card-link">View Live Demo &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="card">
+                    <img src="\assets\Moji.png" alt="Screenshot of Project Two" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">Moji</h3>
+                        <p class="card-description">A VS Code extension that adds visual symbols to keywords for enhanced pattern recognition.</p>
+                        <div class="card-tags">
+                            <span class="tag">Javascript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <a href="https://lucidiancreative.github.io/EmojiCode-website/" class="card-link">View Live Demo &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="card">
+                    <img src="\assets\Caldera.png" alt="Screenshot of Project Three" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">Caldera</h3>
+                        <p class="card-description">A visual calendar app for windows that adds images instead of text.</p>
+                        <div class="card-tags">
+                            <span class="tag">Javascript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <a href="https://github.com/lucidiancreative/Caldera" class="card-link">View on Github &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Animation Projects Section -->
+        <section id="animation-projects" class="section fade-in-section">
+            <h2 class="section-title">Animation Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="card">
+                    <img src="\assets\TRGOF.png" alt="Screenshot of Animation Project One" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">The Road Goes On Forever</h3>
+                        <p class="card-description">A speedrun through the course of human history.</p>
+                        <div class="card-tags">
+                            <span class="tag">Cinestorm</span>
+                            <span class="tag">Final Draft</span>
+                            <span class="tag">Davinci Resolve</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=kL06pIBWzZg" class="card-link">Watch Video &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="card">
+                    <img src="\assets\MyOnlyLove.png" alt="Screenshot of Animation Project Two" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">My Only Love</h3>
+                        <p class="card-description">An unofficial music video for the song "My Only Love", by Deltron 3030.</p>
+                        <div class="card-tags">
+                            <span class="tag">ComfyUI</span>
+                            <span class="tag">FluxAi 2.0</span>
+                            <span class="tag">Z-image</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=rQqoV5xBjzQ" class="card-link">Watch Video &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="card">
+                    <img src="\assets\TheHole.png" alt="Screenshot of Animation Project Three" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">The Hole</h3>
+                        <p class="card-description">An experimental animation made with deforum in ComfyUI.</p>
+                        <div class="card-tags">
+                            <span class="tag">ComfyUI</span>
+                            <span class="tag">Stable Diffusion SDXL</span>
+                            <span class="tag">Flux 1.0</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=qfRj6Mea3hM" class="card-link">Watch Video &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Writing Projects Section -->
+        <section id="writing-projects" class="section fade-in-section">
+            <h2 class="section-title">Writing</h2>
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="card">
+                    <img src="\assets\blueboy.png" alt="Screenshot of Writing Project One" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">Blueboy</h3>
+                        <p class="card-description">An animated series about two college bros searching for their long lost fathers.</p>
+                        <div class="card-tags">
+                            <span class="tag">Final Daft</span>
+                            <span class="tag">Clip Studio Paint</span>
+                            <span class="tag">Adobe</span>
+                        </div>
+                        <a href="\assets\Blueboy-Episode One-FINAL-2k26.pdf" class="card-link">View Bible &rarr;</a><br>
+                        <a href="\assets\Blueboy-Episode One-FINAL-2k26.pdf" class="card-link">Read Story &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="card">
+                    <img src="\assets\Furlong.png" alt="Screenshot of Writing Project Two" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">Furlong</h3>
+                        <p class="card-description">A bored housecat undergoes a psychological crisis when he starts to fantasize about killing his owner.</p>
+                        <div class="card-tags">
+                            <span class="tag">Final Draft</span>
+                            <span class="tag">Clip Studio Paint</span>
+                            <span class="tag">Adobe</span>
+                        </div>
+                        <a href="\assets\FurlongBible.pdf" class="card-link">View Bible&rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="card">
+                    <img src="\assets\Seinfeld_2.png" alt="Screenshot of Writing Project Three" class="card-image">
+                    <div class="card-body">
+                        <h3 class="card-title">Seinfeld - The Girl-Scout Mafia</h3>
+                        <p class="card-description">A fun spec script I wrote to test my sitcom writing abilities. Good for a laugh maybe.</p>
+                        <div class="card-tags">
+                            <span class="tag">Fiction</span>
+                            <span class="tag">Screenwriting</span>
+                            <span class="tag">Creative Writing</span>
+                        </div>
+                        <a href="\assets\Seinfeld - The Girl Scout Mafia - Final.pdf" class="card-link">Read Story &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="section fade-in-section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skills-list">
+                    <span class="skill-tag">Screenwriting</span>
+                    <span class="skill-tag">Final Draft 12</span>
+                    <span class="skill-tag">Sound Design</span>
+                    <span class="skill-tag">Video Editing</span>
+                    <span class="skill-tag">Character Design</span>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript (ES6+)</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">React</span>
+                     <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe</span>
+                    <span class="skill-tag">ComfyUI</span>
+                    <span class="skill-tag">Davinci Resolve</span>
+                    <span class="skill-tag">Clip Studio</span>
+                    <span class="skill-tag">Bitwig Studio</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- My Story Section -->
+        <section id="about" class="section fade-in-section">
+            <h2 class="section-title">My Story</h2>
+            <div class="about-content">
+                <p>
+                   I'm a business graduate and animator/writer turned software developer, and founder of Lucidian - A software company that solves problems for creatives.
+                    I build the tools all creatives wish existed — AI animation platforms, desktop utilities, systems that empower users to perform at the highest level.
+                </p>
+                <p>
+                    I specialize in UX design, focused mostly on generating the most powerful and rewarding user experiences possible. I enjoy turning frustrating problems into simple, functional, and beautifully designed architecture. Software so fluid users just grab it and go.
+                </p>
+                <p>
+                    When i'm not problem solving, I'm storytelling.<br><br> Putting my own software to the test.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact fade-in-section">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-description">
+                I am currently hyper-focused on developing my flagship project "Cinestorm," and unfortunately unavailable to take on new projects for the time being; but I am open to any inquiries or questions.
+            </p>
+            <a href="mailto:dan@lucidiancreative.com" class="btn btn-primary">Connect</a>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://github.com/lucidiancreative" class="social-link" aria-label="GitHub Profile">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="https://discord.gg/SUMJmhFm" class="social-link" aria-label="Discord Profile">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3847-.3973-.8742-.6082-1.2495a.077.077 0 00-.0785-.0371 19.74 19.74 0 00-4.8852 1.5152.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.5767.8851-1.2221 1.2262-1.9334a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0941.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0105c.1201.0991.246.1973.3718.2914a.077.077 0 01-.0066.1277c-.598.3428-1.2194.6447-1.8722.8923a.076.076 0 00-.0416.1057c.3411.7113.7646 1.3567 1.2262 1.9334a.0777.0777 0 00.0842.0276c1.9516-.6067 3.9401-1.5219 5.9929-3.0294a.0824.0824 0 00.0312-.0561c.5004-5.177-.8382-9.6739-3.4846-13.6602a.0699.0699 0 00-.0321-.0277zM8.0202 15.3312c-.8412 0-1.5242-.7871-1.5242-1.7635s.683-1.7635 1.5242-1.7635c.8412 0 1.5242.7871 1.5242 1.7635.0001.9764-.683 1.7635-1.5242 1.7635zm7.9596 0c-.8412 0-1.5242-.7871-1.5242-1.7635s.683-1.7635 1.5242-1.7635c.8412 0 1.5242.7871 1.5242 1.7635s-.683 1.7635-1.5242 1.7635z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@lucidian-creative" class="social-link" aria-label="YouTube Profile">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Lucidian. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

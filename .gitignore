@@ -1,0 +1,9 @@
+# Windows
+desktop.ini
+Thumbs.db
+
+# Old backups
+assets/Dan Jones website 10-2025.html
+
+# OS
+.DS_Store
