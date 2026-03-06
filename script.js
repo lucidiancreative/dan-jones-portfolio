@@ -1,10 +1,37 @@
+// Initialize Lenis smooth scroll
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+});
+
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// Initialize Atropos tilt on all cards, and make the full card surface clickable
+document.querySelectorAll('.card-tilt').forEach(el => {
+    Atropos({
+        el,
+        activeOffset: 120,
+        shadowScale: .95,
+        duration: 300,
+    });
+
+    el.addEventListener('click', function (e) {
+        if (!e.target.closest('a')) {
+            const firstLink = this.querySelector('.card-link');
+            if (firstLink) firstLink.click();
+        }
+    });
+});
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        lenis.scrollTo(this.getAttribute('href'));
     });
 });
 

@@ -266,6 +266,7 @@ body {
    Card
    ============================================================ */
 .card {
+    position: relative;
     background-color: var(--color-bg-card);
     border-radius: 0.5rem;
     overflow: hidden;
@@ -275,9 +276,12 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.2);
+.card-tilt {
+    height: 100%;
+}
+
+.card-tilt .atropos-inner {
+    height: 100%;
 }
 
 .card-image {
@@ -330,6 +334,10 @@ body {
 
 .card-link:hover {
     text-decoration: underline;
+}
+
+.card-tilt {
+    cursor: pointer;
 }
 
 /* ============================================================
